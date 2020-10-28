@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  font-family: "Amaranth", sans-serif;
+}
+
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.homePage {
+  height: 70vh;
+  width: 100vw;
+  background-image: url(/sky.18a50a32.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.homePage nav {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  transition: all 0.5s;
+  z-index: 10;
+  opacity: 1;
+}
+.homePage nav .container {
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.homePage nav .container .one {
+  background-color: gray;
+  height: 60px;
+  width: 60px;
+}
+.homePage nav .container .one img {
+  height: 100%;
+}
+.homePage nav .container .two {
+  background-color: #192030;
+  color: white;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.homePage .sideNav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-left: 0;
+  width: 200px;
+  transform: translateX(100%);
+  background-color: #bdbdbd;
+  z-index: 999;
+  transition: all 0.5s;
+  list-style: none;
+}
+.homePage .sideNav li {
+  height: 48px;
+  width: 200px;
+  line-height: 48px;
+  display: block;
+  transition: 0.25s;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.homePage .sideNav li:hover {
+  background-color: #333;
+}
+.homePage .sideNav li a {
+  text-decoration: none;
+  color: #000000;
+}
+.homePage .sideNav .contact:after {
+  width: 160px;
+  display: block;
+  content: "";
+  border-bottom: 1px solid #dbdbdb;
+}
+.homePage .sideNav p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+.homePage .sideNav i {
+  font-size: 24px;
+  color: black;
+  margin-left: 30px;
+}
+
+.allSkill {
+  height: 35vh;
+  width: 100vw;
+  background-image: url("/city.8e50cfc4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.allSkill h3 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #FAFAFA;
+}
+.allSkill .carousel {
+  display: flex;
+  flex-direction: row;
+}
+.allSkill .carousel .skill {
+  display: flex;
+}
+.allSkill .carousel .skill .carousel-logo {
+  width: 90px;
+  height: 90px;
+  margin: 0 0.8rem;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.allSkill .carousel .skill .carousel-logo img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.allSkill .carousel .skill .carousel-logo img:hover + span {
+  display: block;
+}
+.allSkill .carousel .skill .carousel-logo span {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #eee;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  display: none;
+  font-size: 1.2rem;
+}
+
+.arrow {
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+}
+
+#left {
+  left: 3rem;
+  top: 16vh;
+  font-size: 2rem;
+}
+
+#right {
+  right: 3rem;
+  top: 16vh;
+  font-size: 2rem;
+}
+
+.RecentProject {
+  padding-top: 2.5rem;
+  height: 110vh;
+  width: 100vw;
+  background-color: #FAFAFA;
+}
+.RecentProject .container {
+  margin: auto;
+  width: 70vw;
+  text-align: center;
+  position: relative;
+}
+.RecentProject .container h3 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.RecentProject .container p {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+}
+.RecentProject .container i {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+.RecentProject .container i:first-of-type {
+  margin-left: 2rem;
+}
+.RecentProject .container .projectWrapper {
+  position: relative;
+}
+.RecentProject .container .projectWrapper:not(:first-of-type) {
+  margin-top: 10vh;
+}
+.RecentProject .container .projectWrapper .project {
+  height: 35vh;
+  width: 30vw;
+  background-color: red;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.RecentProject .container .projectWrapper .project:hover .title > .titleNameWrapper {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all 0.4s;
+}
+.RecentProject .container .projectWrapper .project:hover, .RecentProject .container .projectWrapper .project:hover .projectName {
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.RecentProject .container .projectWrapper .project .title {
+  height: 35vh;
+}
+.RecentProject .container .projectWrapper .project .title:hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.RecentProject .container .projectWrapper .project .title .titleDiv {
+  height: 35vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  z-index: 5;
+  display: block;
+  line-height: 35vh;
+  text-align: center;
+}
+.RecentProject .container .projectWrapper .project .title .titleDiv p {
+  display: inline-block;
+}
+.RecentProject .container .projectWrapper .project .title img {
+  display: none;
+}
+.RecentProject .container .projectWrapper .project .title div {
+  display: none;
+}
+.RecentProject .container .projectWrapper .project .title div .titleName {
+  border: 1px solid black;
+  padding: 1rem 2rem;
+}
+.RecentProject .container .projectWrapper .project .projectName {
+  border: 1px solid #fff;
+  background-color: #fff;
+  height: 5vh;
+  line-height: 5vh;
+  border-top: 0;
+  position: absolute;
+  top: 35vh;
+  right: 0;
+  left: 0;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.RecentProject .container .projectWrapper .project .projectName i {
+  color: blue;
+}
+.RecentProject .container .projectWrapper .projectIntroduction {
+  height: 35vh;
+  width: 30vw;
+  position: absolute;
+  top: 4vh;
+  left: 40vw;
+}
+.RecentProject .container .projectWrapper .projectIntroduction h4 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#img1 {
+  background-image: url("/note.52179e50.png");
+}
+
+#img2 {
+  background-image: url("/weather.ed2e93ea.png");
+}
+
+.all {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+  .projectIntroduction {
+    display: none;
+  }
+
+  .RecentProject .container .projectWrapper .project {
+    width: 60vw;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=/scss.c8e2e331.css.map */

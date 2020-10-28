@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" href="../src/scss/index.scss">
+  <script type="text/javascript" src="../src/index.js" defer></script>
+  <!-- google font poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="homePage" id='a0'>
+
+    <nav class="nav">
+      <div class="container">
+        <div class="one"><img src="../src/picture/star.png" alt="picture"></div>
+        <div class="two"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+
+    <ul class="sideNav">
+      <li>Home</li>
+      <!-- <li>About</li> -->
+      <li>Skills</li>
+      <li>Project</li>
+      <!-- <li>More info</li> -->
+      <!-- <li class="contact">Contact</li> -->
+      <p>Learn More About Me</p>
+      <a href="https://github.com/SiouTW"><i class="fab fa-github"></i></a>
+    </ul>
+
+
+  </div>
+
+  <div class="allSkill" id="a1">
+    <h3>Front-End Skills</h3>
+
+    <div class="carousel">
+
+      <div class="skill">
+        <div class="carousel-logo">
+          <img src="../src/picture/js.png" alt="js">
+          <span>js</span>
+        </div>
+
+        <div class="carousel-logo">
+          <img src="../src/picture/es6.jpg" alt="es6">
+          <span>es6</span>
+        </div>
+
+        <div class="carousel-logo">
+          <img src="../src/picture/less.jpg" alt="less">
+          <span>less</span>
+        </div>
+
+        <div class="carousel-logo">
+          <img src="../src/picture/sass.jpg" alt="sass">
+          <span>sass</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="carousel">
+
+      <div class="skill" style="display: none;">
+        <div class="carousel-logo">
+          <img src="../src/picture/node.jpg" alt="node">
+          <span>node</span>
+        </div>
+
+        <div class="carousel-logo">
+          <img src="../src/picture/git.jpg" alt="git">
+          <span>git</span>
+        </div>
+
+        <div class="carousel-logo">
+          <img src="../src/picture/github.jpeg" alt="github">
+          <span>github</span>
+        </div>
+
+        <div class="carousel-logo">
+          <img src="../src/picture/npm.jpg" alt="npm">
+          <span>npm</span>
+        </div>
+      </div>
+
+      <button id="left" class="arrow"><i class="fas fa-chevron-left"></i></button>
+      <button id="right" class="arrow"><i class="fas fa-chevron-right"></i></button>
+
+    </div>
+
+
+  </div>
+
+  <div class="RecentProject" id="a2">
+    <div class="container">
+
+      <h3>Recent Project</h3>
+      <p>Watch a full list of projects at once on my <a href="https://github.com/SiouTW">GitHub</a></p>
+
+      <div class="projectWrapper clear-fix">
+
+        <div class="projectWrapper clear-fix">
+
+          <div class="project">
+            <div class="title">
+              <div class="titleDiv" id="img1">
+              </div>
+
+              <div class="titleNameWrapper">
+                <p class="titleName">Notes App</p>
+              </div>
+            </div>
+
+            <div class="projectName">
+              <p>Notes App</p>
+              <a href="https://sioutw.github.io/Projects-Notes/index.html"><i class="fas fa-home"></i></a>
+              <a href="https://github.com/SiouTW/Projects-Notes"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="projectIntroduction">
+            <h4>Notes App</h4>
+            <p>這個App運用了localStorage的方式儲存Note裡的文字，就算關閉分頁或是重開機資料還是會留著。
+              然後這個Note支援使用MD語法。
+            </p>
+          </div>
+        </div>
+
+
+
+        <div class="projectWrapper clear-fix">
+
+          <div class="project">
+            <div class="title">
+              <div class="titleDiv" id="img2">
+              </div>
+
+              <div class="titleNameWrapper">
+                <p class="titleName">Weather page</p>
+              </div>
+            </div>
+
+            <div class="projectName">
+              <p>Weather page</p>
+              <a href="https://sioutw.github.io/Projects-weather/index.html"><i class="fas fa-home"></i></a>
+              <a href="https://github.com/SiouTW/Projects-weather"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="projectIntroduction">
+            <h4>Weather page</h4>
+            <p>這個app使用了 https://openweathermap.org/ 的api，
+              可以查詢當天天氣，
+              會顯示平均溫度、體感溫度、濕度和天氣型態。
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+    <div class="all"></div>
+
+
+
+
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>
