@@ -9,7 +9,7 @@
 }
 .homePage {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   background-image: url(picture/sky.jpg);
   background-size: cover;
   background-position: center;
@@ -95,7 +95,7 @@
 }
 .allSkill {
   height: 35vh;
-  width: 100vw;
+  width: 100%;
   background-image: url('picture/city.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -168,8 +168,8 @@
 }
 .RecentProject {
   padding-top: 2.5rem;
-  height: 110vh;
-  width: 100vw;
+  padding-bottom: 5rem;
+  width: 100%;
   background-color: #FAFAFA;
 }
 .RecentProject .container {
@@ -291,6 +291,9 @@
 }
 #img2 {
   background-image: url(picture/weather.png);
+}
+#img3 {
+  background-image: url(picture/map.png);
 }
 .all {
   position: fixed;
